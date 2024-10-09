@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>レポート課題2 課題①</title>
+        <link rel="stylesheet" href="css/レポート課題2 課題①.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
+        <script src="js/jquery-3.6.2.min.js"></script>
+        <script src="js/slick.min.js"></script>
+    </head>
+    <body>
+        <div class=container>
+            <div class="slider">
+                <img src="img/img1.jpg" alt="slide_01">
+                <img src="img/img2.jpg" alt="slide_02">
+                <img src="img/img3.jpg" alt="slide_03">
+                <img src="img/img4.jpg" alt="slide_04">
+                <img src="img/img5.jpg" alt="slide_05">
+                <img src="img/img6.jpg" alt="slide_06">
+            </div>
+        </div>
+        <script>
+        $('.slider').slick({
+                autoplay:true,
+                autoplaySpeed:2000,
+                slidesToShow:5,
+                slidesToScroll:1,
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,149 @@
+body{background-color: antiquewhite; font-family:'Noto Sans JP',sans-serif;}
+h1{color:black;font-size: 50px;font-family: cursive;text-align: center;padding: 30px;}
+h2{color: black;font-size: 30px;font-family: serif;text-align: center;}
+h3{color: darkgrey;font-size: 20px;font-family: serif;text-align: center;}
+h4{color: black;font-size: 15px;font-family: serif;;}
+span{color: blueviolet;}
+  
+
+
+.container{
+  margin:0 auto;
+}
+.slider{
+  width: 70%;
+  margin:0 auto;
+}
+.container2 {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  padding: 10px;
+  width: 0%;
+}
+.right {
+  width: 90%;
+  padding: 5px;
+  position: center;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_navi {
+	position: relative;
+	overflow: hidden;
+	width: 360px;
+	height:360px;
+}
+.cp_navi #cp_sidenav a {
+	font-size: 20px;
+	position: absolute;
+	left: -95px;
+	width: 110px;
+	height: 54px;
+	padding: 12px 15px;
+	transition: 0.3s;
+	text-decoration: none;
+	color: black;
+	border-radius: 0 5px 5px 0;
+  font-family: fantasy;
+}
+.cp_navi #cp_sidenav a:hover {
+	left: -10px;
+}
+.cp_navi #Home {
+	top: 20px;
+	background-color: dimgray;
+}
+.cp_navi #Information {
+	top: 80px;
+	background-color: gray;
+}
+
+.cp_navi #exhibition {
+	top: 140px;
+	background-color: darkgray;
+}
+.cp_navi #NewInformation {
+	top: 200px;
+	background-color: silver;
+}
+.cp_navi #talk {
+	top: 260px;
+	background-color: whitesmoke;
+}
+
+
+.btn-stitch {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background:sienna ;
+  color: wheat;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 5px sienna;
+  border: dashed 3px wheat;
+ 
+}
+
+.btn-stitch:hover {
+  border: dotted 1px #FFF;
+}
+
+ 
+
+.button_solid {
+    text-align: center;
+}
+.button_solid p {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 0.04rem;
+    display: inline-block;
+    position: relative;
+}
+.button_solid p:before, .button_solid p:after {
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+    width: 20px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #000000;
+    content: "";
+}
+.button_solid p:before {
+    left: -30px;
+    -webkit-transform: rotate( 50deg );
+    transform: rotate( 50deg );
+}
+.button_solid p:after {
+    right: -30px;
+    -webkit-transform: rotate( -50deg );
+    transform: rotate( -50deg );
+}
+.button_solid a {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 10px 25px;
+    color: #000000;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: antiquewhite;
+    filter: drop-shadow(0px 2px 4px #000000);
+    border-radius: 3px;
+}
+.button_solid a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
+}

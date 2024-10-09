@@ -1,0 +1,143 @@
+body{background-color: antiquewhite;}
+h1{color:black;font-size: 50px;font-family: cursive;text-align: center;padding: 30px;}
+
+.top{
+  display: flex;
+  justify-content: left; /* 中央寄せ */
+}
+.top .child{
+  box-sizing: border-box;
+  padding: 30px ;  
+ position:left;
+}
+
+.container{
+    margin:0 auto;
+  }
+  .slider{
+    width: 70%;
+    margin:0 auto;
+  }
+  .container2 {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*ボタン*/
+.btn-circle-stitch {
+  display: inline-block;
+  text-decoration: none;
+  background: sienna;
+  color: #FFF;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 5px sienna;
+  border: dashed 3px #FFF;
+  transition: .4s;
+  font-family: 'Baloo Bhaina', cursive;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn-circle-stitch:hover {
+  background: peru;
+  box-shadow: 0px 0px 0px 5px peru;
+}
+
+
+
+.box {
+  position: relative;
+  margin: 0px;
+  padding: 0.5em 1em;
+  border: solid 3px darkgray;
+  border-radius: 8px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.box .box-title {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 1;
+  font-size: 19px;
+  background: antiquewhite;
+  color: darkgray;
+  font-weight: bold;
+}
+.box p {
+  margin: 0; 
+  padding: 0;
+  text-align: center;
+}
+
+
+/* ポップアップウインドウの設定 */
+.pu {
+  background-color: #efefef;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  overflow-y: scroll;
+}
+
+/* チェックボックスの初期設定 */
+#pu-on{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#pu-on:checked + .pu{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close{
+  background: #000;
+  color: #fff;
+  font-size: 30px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* 開くボタン */
+.btn-open{
+  background: antiquewhite;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px auto;
+  width: 95%;
+  text-align: center;
+}
+
+/* ポップアップの内容 */
+.pu-content{
+  margin: 40px auto 40px auto;
+  width: 90%;
+}
+
+.img{
+  padding: 2px;
+  border: 5px solid #e8bf85;
+  box-shadow: 1px 1px 3px gray;
+ margin: 50px;
+ margin-left: 400px;
+}
+
